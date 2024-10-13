@@ -42,6 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
             message: "Thank you for registering with us!"
         };
 
-        return emailjs.send('service_id', 'template_id', templateParams, 'user_id');
+        return emailjs.send('service_id', 'template_id');
     }
 });
