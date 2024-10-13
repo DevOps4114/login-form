@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label> First Name </label>
+            <input type="text" name="firstname" placeholder="Enter your first name" required>
+
+            <label> Middle Name </label>
+            <input type="text" name="middlename" placeholder="Enter your middle name">
+
+            <label> Last Name </label>
+            <input type="text" name="lastname" placeholder="Enter your last name" required>
+
+            <label> Course </label>
+            <select name="course" required>
+                <option value="">Select your course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+            </select>
+
+            <label> Gender </label>
+            <div class="gender-options">
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+
+            <label> Phone </label>
+            <div class="phone-container">
+                <input type="text" name="country-code" value="+91" size="2" readonly>
+                <input type="tel" name="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <label> Address </label>
+            <textarea name="address" placeholder="Enter your address" rows="4" required></textarea>
+
+            <label> Email </label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label> Password </label>
+            <input type="password" name="pass" placeholder="Enter your password" required>
+
+            <label> Re-type Password </label>
+            <input type="password" name="repass" placeholder="Re-enter your password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
