@@ -29,40 +29,12 @@ body {
     color: #333;
 }
 
-label {
-    display: block;
-    margin: 15px 0 5px;
-    color: #555;
-    font-weight: bold;
-}
-
-input,
-select,
-textarea,
-button {
+input, select, textarea, button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #74ebd5;
-    outline: none;
-    box-shadow: 0 0 5px #74ebd5;
-}
-
-.gender-options input {
-    width: auto;
-    margin-right: 10px;
-}
-
-.phone-container {
-    display: flex;
-    gap: 5px;
 }
 
 button {
@@ -71,15 +43,4 @@ button {
     font-weight: bold;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #57c6a9;
-}
-
-@media (max-width: 480px) {
-    .form-container {
-        width: 90%;
-    }
 }
