@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="form-container">
         <h1>Registration Form</h1>
-        <form id="registrationForm">
+        <form id="registrationForm" action="submit.php" method="POST">
             <label> First Name </label>
             <input type="text" name="firstname" placeholder="Enter your first name" required>
 
@@ -52,16 +53,14 @@
             <input type="email" name="email" placeholder="Enter your email" required>
 
             <label> Password </label>
-            <input type="password" name="pass" placeholder="Enter your password" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
 
             <label> Re-type Password </label>
-            <input type="password" name="repass" placeholder="Re-enter your password" required>
+            <input type="password" name="repassword" placeholder="Re-enter your password" required>
 
             <button type="submit">Submit</button>
         </form>
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
